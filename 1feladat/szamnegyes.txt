@@ -1,0 +1,24 @@
+namespace myjinxin
+{
+    using System;
+
+    public class Kata
+    {
+        public int[] TableGame(int[][] table)
+        {
+            int A = table[0][0];
+            int B = table[0][2];
+            int C = table[2][0];
+            int D = table[2][2];
+
+            if (table[0][1] != A + B || table[1][0] != A + C ||
+                table[1][2] != B + D || table[2][1] != C + D ||
+                table[1][1] != A + B + C + D)
+            {
+                return new int[] { -1 };
+            }
+
+            return new int[] { A, B, C, D };
+        }
+    }
+}
