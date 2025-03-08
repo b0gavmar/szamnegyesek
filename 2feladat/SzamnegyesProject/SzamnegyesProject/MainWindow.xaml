@@ -23,6 +23,14 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding T[0,0]}" />
+        <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding A}" />
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding B}" />
+        <TextBox Grid.Row="0" Grid.Column="2" Text="{Binding C}" />
+        <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding D}" />
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding E}" />
+        <TextBox Grid.Row="1" Grid.Column="2" Text="{Binding F}" />
+        <TextBox Grid.Row="2" Grid.Column="0" Text="{Binding G}" />
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding H}" />
+        <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding I}" />
     </Grid>
 </Window>
