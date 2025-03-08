@@ -10,7 +10,7 @@
             
         }
 
-        public void Increase(int tableNumber)
+        public void Increase()
         {
             for(int i = 0; i<4;i++)
             {

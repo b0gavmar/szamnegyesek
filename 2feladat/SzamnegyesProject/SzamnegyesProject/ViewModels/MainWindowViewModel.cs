@@ -26,25 +26,25 @@ namespace SzamnegyesProject.ViewModels
         [RelayCommand]
         public void IncreaseTableA()
         {
-            A.Increase(1);
+            A.Increase();
         }
 
         [RelayCommand]
         public void IncreaseTableB()
         {
-            B.Increase(2);
+            B.Increase();
         }
 
         [RelayCommand]
         public void IncreaseTableC()
         {
-            C.Increase(3);
+            C.Increase();
         }
 
         [RelayCommand]
         public void IncreaseTableD()
         {
-            D.Increase(4);
+            D.Increase();
         }
     }
 }
