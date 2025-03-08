@@ -7,44 +7,72 @@ namespace SzamnegyesProject.ViewModels
     public partial class MainWindowViewModel : ObservableObject
     {
         [ObservableProperty]
-        private Szamnegyes a;
+        private int a;
         [ObservableProperty]
-        private Szamnegyes b;
+        private int b;
         [ObservableProperty]
-        private Szamnegyes c;
+        private int c;
         [ObservableProperty]
-        private Szamnegyes d;
+        private int d;
+        [ObservableProperty]
+        private int e;
+        [ObservableProperty]
+        private int f;
+        [ObservableProperty]
+        private int g;
+        [ObservableProperty]
+        private int h;
+        [ObservableProperty]
+        private int i;
+
 
         public MainWindowViewModel()
         {
-            A = new Szamnegyes();
-            B = new Szamnegyes();
-            C = new Szamnegyes();
-            D = new Szamnegyes();
+            A = 0;
+            B = 0;
+            C = 0;
+            D = 0;
+            E = 0;
+            F = 0;
+            G = 0;
+            H = 0;
+            I = 0;
         }
 
         [RelayCommand]
         public void IncreaseTableA()
         {
-            A.Increase();
+            A++;
+            B++;
+            D++;
+            E++;
         }
 
         [RelayCommand]
         public void IncreaseTableB()
         {
-            B.Increase();
+            B++;
+            C++;
+            E++;
+            F++;
         }
 
         [RelayCommand]
         public void IncreaseTableC()
         {
-            C.Increase();
+            D++;
+            E++;
+            G++;
+            H++;
         }
 
         [RelayCommand]
         public void IncreaseTableD()
         {
-            D.Increase();
+            E++;
+            F++;
+            H++;
+            I++;
         }
     }
 }
