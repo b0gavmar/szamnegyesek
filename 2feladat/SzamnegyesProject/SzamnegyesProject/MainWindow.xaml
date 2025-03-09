@@ -22,6 +22,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding A}" />
         <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding B}" />
@@ -32,5 +33,11 @@
         <TextBox Grid.Row="2" Grid.Column="0" Text="{Binding G}" />
         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding H}" />
         <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding I}" />
+        <Button Grid.Row="3" Grid.Column="0" Command="{Binding IncreaseTableACommand}">1. tábla növelése</Button>
+        <Button Grid.Row="3" Grid.Column="2" Command="{Binding IncreaseTableBCommand}">2. tábla növelése</Button>
+        <Button Grid.Row="5" Grid.Column="0" Command="{Binding IncreaseTableCCommand}">3. tábla növelése</Button>
+        <Button Grid.Row="5" Grid.Column="2" Command="{Binding IncreaseTableDCommand}">4. tábla növelése</Button>
+        <Button Grid.Row="4" Grid.Column="1" Command="{Binding NullazCommand}">Táblák nullázása</Button>
+
     </Grid>
 </Window>
