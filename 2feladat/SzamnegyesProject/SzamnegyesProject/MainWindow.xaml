@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SzamnegyesProject"
         xmlns:viewmodel="clr-namespace:SzamnegyesProject.ViewModels"
         mc:Ignorable="d"
-        Title="Szamnegyesek" Height="450" Width="800">
+        Title="Szamnegyesek" Height="250" Width="400">
     <Window.DataContext>
         <viewmodel:MainWindowViewModel/>
     </Window.DataContext>
