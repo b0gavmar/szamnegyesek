@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Szamnegyes.Backend.Repos;
-using SzamnegyesProject.Models;
+using Szamnegyes.Shared.Models;
 
 namespace Szamnegyes.Backend.Controllers
 {
@@ -17,9 +17,7 @@ namespace Szamnegyes.Backend.Controllers
         [HttpGet()]
         public async Task<IActionResult> GetAllAsync()
         {
-            List<SzamnegyesProject.Models.Szamnegyes> all = new List<SzamnegyesProject.Models.Szamnegyes>();
-
-            all = await _foursRepo.GetAllAsync();
+            List<Fours>  all = await _foursRepo.GetAllAsync();
             return Ok(all);
         }
     }

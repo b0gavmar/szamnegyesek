@@ -1,23 +1,22 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Szamnegyes.Backend.Context;
-using SzamnegyesProject.Models;
+using Szamnegyes.Shared.Models;
 
 namespace Szamnegyes.Backend.Repos
 {
     public class FoursRepo
     {
-        private readonly List<SzamnegyesProject.Models.Szamnegyes> _fours = new List<SzamnegyesProject.Models.Szamnegyes>();
 
-        private readonly DbContext _dbContext;
-        private readonly DbSet<SzamnegyesProject.Models.Szamnegyes> _dbSet;
+        private readonly FoursContext _dbContext;
+        private readonly DbSet<Fours> _dbSet;
 
         public FoursRepo(FoursContext dbContext)
         {
             _dbContext = dbContext;
-            _dbSet = _dbContext?.Set<SzamnegyesProject.Models.Szamnegyes>();
+            _dbSet = _dbContext.Fours;
         }
 
-        public Task<List<SzamnegyesProject.Models.Szamnegyes>> GetAllAsync()
+        public Task<List<Fours>> GetAllAsync()
         {
             return _dbSet.ToListAsync();
         }

@@ -1,4 +1,7 @@
 
+using Szamnegyes.Backend.Extensions;
+using Szamnegyes.Backend.Repos;
+
 namespace Szamnegyes.Backend
 {
     public class Program
@@ -14,7 +17,13 @@ namespace Szamnegyes.Backend
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.ConfigureMySqlContext();
+
+            builder.Services.AddScoped<FoursRepo>();
+
             var app = builder.Build();
+
+            app.InitializeDatabase();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
