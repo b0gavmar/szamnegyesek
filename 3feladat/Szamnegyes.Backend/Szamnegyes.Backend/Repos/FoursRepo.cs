@@ -16,9 +16,28 @@ namespace Szamnegyes.Backend.Repos
             _dbSet = _dbContext.Fours;
         }
 
-        public Task<List<Fours>> GetAllAsync()
+        public async Task<List<Fours>> GetAllAsync()
         {
-            return _dbSet.ToListAsync();
+            return await _dbSet.ToListAsync();
+        }
+
+        public async Task<Fours> GetByIdAsync(int id)
+        {
+            return await _dbSet.FirstOrDefaultAsync(f => f.Id == id);
+        }
+
+        public async Task CreateAsync(Fours fours)
+        {
+            try
+            {
+                _dbSet.Add(fours);
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
     }
 }

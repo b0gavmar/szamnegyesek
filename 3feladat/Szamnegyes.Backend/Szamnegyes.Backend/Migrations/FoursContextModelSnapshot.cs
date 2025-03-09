@@ -21,7 +21,6 @@ namespace Szamnegyes.Backend.Migrations
             modelBuilder.Entity("Szamnegyes.Shared.Models.Fours", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("A")

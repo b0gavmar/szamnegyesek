@@ -10,7 +10,7 @@ using Szamnegyes.Backend.Context;
 namespace Szamnegyes.Backend.Migrations
 {
     [DbContext(typeof(FoursContext))]
-    [Migration("20250309102834_m1")]
+    [Migration("20250309111310_m1")]
     partial class m1
     {
         /// <inheritdoc />
@@ -24,7 +24,6 @@ namespace Szamnegyes.Backend.Migrations
             modelBuilder.Entity("Szamnegyes.Shared.Models.Fours", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("A")

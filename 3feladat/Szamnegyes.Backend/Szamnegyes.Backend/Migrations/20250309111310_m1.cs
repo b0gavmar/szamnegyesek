@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
-using MySql.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
@@ -18,8 +17,7 @@ namespace Szamnegyes.Backend.Migrations
                 name: "Fours",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                    Id = table.Column<int>(type: "int", nullable: false),
                     A = table.Column<int>(type: "int", nullable: false),
                     B = table.Column<int>(type: "int", nullable: false),
                     C = table.Column<int>(type: "int", nullable: false),
