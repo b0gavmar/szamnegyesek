@@ -18,12 +18,15 @@ namespace Szamnegyes.Backend
             builder.Services.AddSwaggerGen();
 
             builder.Services.ConfigureMySqlContext();
+            builder.Services.ConfigureCors();
 
             builder.Services.AddScoped<FoursRepo>();
 
             var app = builder.Build();
 
             app.InitializeDatabase();
+
+            app.UseCors("FoursCors");
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
