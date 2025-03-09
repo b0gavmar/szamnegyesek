@@ -1,4 +1,4 @@
-import { ref, computed } from "vue";
+import { ref, toRaw } from "vue";
 import { defineStore } from "pinia";
 import axios from "axios";
 
@@ -27,11 +27,13 @@ export const useFoursStore = defineStore("fours", () => {
   };
 
   const postFour = async (four) => {
-    const t = [four.value.a,four.value.b,four.value.v,four.value.d];
+    const t = [four.value.a || 0,four.value.b || 0,four.value.c || 0,four.value.d || 0];
     try {
-      await axios.post(`https://localhost:7082/fours`,four);
-      console.log(t)
-    } catch {}
+      const response = await axios.post(`https://localhost:7082/fours`,{ "list": t});
+      console.log(response);
+    } catch(ex) {
+      console.log(ex)
+    }
   };
 
   return { fours, currentFour, fetchFours, getFoursById, postFour };

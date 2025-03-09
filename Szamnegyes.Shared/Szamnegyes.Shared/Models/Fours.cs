@@ -17,7 +17,7 @@ namespace Szamnegyes.Shared.Models
         public Fours(int a, int b, int c, int d)
         {
             A = a; B = b; C = c; D = d;
-            Id = A * 1000 + B * 100 + C * 10 + D;
+            Id = Convert.ToInt32(A.ToString() + B.ToString() + C.ToString() + D.ToString());
         }
 
         public Fours()

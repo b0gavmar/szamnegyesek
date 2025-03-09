@@ -19,7 +19,7 @@ namespace Szamnegyes.Shared.Converters
                     B = dto.list[1],
                     C = dto.list[2],
                     D = dto.list[3],
-                    Id = dto.list[0] * 1000 + dto.list[1] * 100 + dto.list[2] * 10 + dto.list[3],
+                    Id = Convert.ToInt32(dto.list[0].ToString()+ dto.list[1].ToString() + dto.list[2].ToString() + dto.list[3].ToString()),
                 };
             }
             else
