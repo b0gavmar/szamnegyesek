@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzamnegyesProject", "SzamnegyesProject\SzamnegyesProject.csproj", "{8CB017ED-3199-472A-A301-FEA35D8F8E9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzamnegyesProject", "SzamnegyesProject\SzamnegyesProject.csproj", "{8CB017ED-3199-472A-A301-FEA35D8F8E9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szamnegyes.Shared", "..\..\Szamnegyes.Shared\Szamnegyes.Shared\Szamnegyes.Shared.csproj", "{38D6C267-7D8A-F5AD-CDA4-63120B2F740B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Szamnegyes.Shared", "..\..\Szamnegyes.Shared\Szamnegyes.Shared\Szamnegyes.Shared.csproj", "{38D6C267-7D8A-F5AD-CDA4-63120B2F740B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Szamnegyes.Backend", "..\..\3feladat\Szamnegyes.Backend\Szamnegyes.Backend\Szamnegyes.Backend.csproj", "{8C2C4F3C-74BF-49CF-A99D-FFEB98294BE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{38D6C267-7D8A-F5AD-CDA4-63120B2F740B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38D6C267-7D8A-F5AD-CDA4-63120B2F740B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38D6C267-7D8A-F5AD-CDA4-63120B2F740B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2C4F3C-74BF-49CF-A99D-FFEB98294BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2C4F3C-74BF-49CF-A99D-FFEB98294BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2C4F3C-74BF-49CF-A99D-FFEB98294BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2C4F3C-74BF-49CF-A99D-FFEB98294BE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\3feladat\Szamnegyes.Backend\Szamnegyes.Backend\Szamnegyes.Backend.csproj" />
     <ProjectReference Include="..\..\..\Szamnegyes.Shared\Szamnegyes.Shared\Szamnegyes.Shared.csproj" />
   </ItemGroup>
 
